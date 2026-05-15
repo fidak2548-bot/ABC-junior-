@@ -1,0 +1,8 @@
+{
+  "name": "ABC Junior",
+  "description": "An interactive educational platform for toddlers to learn alphabet recognition, tracing, phonics, and vocabulary through fun games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

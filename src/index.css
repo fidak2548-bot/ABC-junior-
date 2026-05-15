@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer components {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+body {
+  @apply select-none touch-pan-y bg-[#E0F2FE] min-h-screen text-[#1E293B];
+}
+
+.card-3d {
+  transition: transform 0.2s ease;
+  border-bottom-width: 8px;
+}
+
+.tab-active {
+  background: #FFFFFF;
+  border-radius: 999px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Hide scrollbars for a cleaner immersive game feel */
+::-webkit-scrollbar {
+  display: none;
+}
+
